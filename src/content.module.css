@@ -1,0 +1,38 @@
+.container{
+    border-radius: 8px;
+    border: none;
+    box-shadow: 3px 3px 3px 3px #D9D9D9FF;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 8px;
+}
+
+.temp{
+    font-size: 80px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.type{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pressure{
+    width: 49%;
+    background: #F3FBFFFF;
+    padding: 8px;
+}
+.humidity{
+    width: 49%;
+    background: #F3FBFFFF;
+    padding: 8px;
+}
+
+.sun{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}

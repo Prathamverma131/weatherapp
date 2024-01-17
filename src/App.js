@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import SearchBox from './SearchBox';
+import Weekly from './Weekly';
+import './App.css'
+import { useState } from 'react';
 
 function App() {
+
+  var [location,setLocation] = useState("Pune, Maharashtra");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App container">
+      <SearchBox location={location} setLocation={setLocation}/>
+      <Weekly location={location}/>
     </div>
   );
 }

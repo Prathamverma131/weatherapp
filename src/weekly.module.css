@@ -1,0 +1,8 @@
+.container{
+    width: 100%;
+    overflow-x: scroll;
+    column-gap: 19.676px;
+    display: flex;
+    padding: 16px 0px 16px 0px;
+    margin-top: 16px;
+}

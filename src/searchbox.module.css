@@ -1,0 +1,35 @@
+.search{
+    display: block;
+    border: none;
+    height: 100%;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 600;
+}
+.search:focus{
+    outline: none;
+}
+
+.wrapper{
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 3px 3px 3px 3px #D9D9D9FF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper:focus{
+    outline: 8px solid black;
+}
+
+
+.image{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+
+
+
