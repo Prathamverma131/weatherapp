@@ -3,6 +3,7 @@ import pin from './utils/pin.png';
 import search from './utils/search.png';
 import geolocation from './utils/location';
 import { useEffect } from 'react';
+import Dropdown from './Dropdown';
 
 
 function SearchBox({location,setLocation}){
@@ -11,7 +12,7 @@ function SearchBox({location,setLocation}){
         geolocation(setLocation);
     },[])
 
-    
+   
     return <> 
     <div className={styles.wrapper}>
     <div className={styles.image}><img src={pin} width={30} height={30} alt='pin icon'/></div>
@@ -20,6 +21,7 @@ function SearchBox({location,setLocation}){
     }}/>
     <div className={styles.image}><img src={search} width={30} height={30} alt='search icon'/></div>
     </div>
+    {location.length? null:<Dropdown setLocation={setLocation}/>}
     </>
 }
 
